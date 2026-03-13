@@ -1,0 +1,15 @@
+name: Test
+on:
+  push:
+    branches: [main]
+    tags-ignore: ['**']
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    uses: yoinspiration/axci/.github/workflows/test.yml@feat/ci-test-selection-hardening
+    with:
+      crate_name: "starry-process"
+      test_targets: "auto"
+      base_ref: "origin/main"

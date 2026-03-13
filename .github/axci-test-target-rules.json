@@ -1,0 +1,15 @@
+{
+    "non_code": {
+      "dirs": ["doc/", "docs/"],
+      "exts": [".md", ".txt", ".png", ".jpg", ".jpeg", ".svg", ".gif"],
+      "files": ["LICENSE", ".gitignore", ".gitattributes"]
+    },
+    "run_all_patterns": ["Cargo.toml", "Cargo.lock", "rust-toolchain.toml", ".github/workflows/*"],
+    "selection_rules": [
+      { "id": "src_change", "patterns": ["src/*", "tests/*"], "targets": ["starry-riscv64"] }
+    ],
+    "target_order": ["starry-riscv64", "starry-loongarch64", "starry-aarch64", "starry-x86_64"],
+    "run_all_crates": ["starry-process"],
+    "crate_rules": [],
+    "crate_path_rules": []
+}
