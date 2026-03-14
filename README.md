@@ -18,4 +18,5 @@ This script creates a temporary git worktree and checks:
 - source code change should select test targets
 
 > CI validation note: this line is added to verify doc-only auto-skip behavior.
+> CI validation note: this line is added to verify doc-only auto-skip behavior.
 
