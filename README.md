@@ -19,4 +19,4 @@ This script creates a temporary git worktree and checks:
 
 > CI validation note: this line is added to verify doc-only auto-skip behavior.
 > CI validation note 2: doc-only push to re-check workflow behavior.
-> CI validation note 3: doc-only push to re-check workflow behavior.
+
