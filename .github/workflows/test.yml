@@ -16,3 +16,5 @@ jobs:
       runs_on: '["self-hosted","Linux","X64"]'
 
 # lock-test trigger 1773529271
+
+# force auto-all test 1773531865
