@@ -286,8 +286,8 @@ impl Process {
 
     /// Creates a init [`Process`].
     ///
-    /// This function can be called multiple times, but
-    /// [`ProcessBuilder::build`] on the the result must be called only once.
+    /// This function should only be called during initialization.
+    /// The init process is registered internally and can be retrieved with [`init_proc`].
     pub fn new_init(pid: Pid) -> Arc<Process> {
         Self::new(pid, None)
     }
