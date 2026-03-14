@@ -287,7 +287,8 @@ impl Process {
     /// Creates a init [`Process`].
     ///
     /// This function should only be called during initialization.
-    /// The init process is registered internally and can be retrieved with [`init_proc`].
+    /// The init process is registered internally and can be retrieved with
+    /// [`init_proc`].
     pub fn new_init(pid: Pid) -> Arc<Process> {
         Self::new(pid, None)
     }
