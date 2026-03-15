@@ -14,6 +14,7 @@ jobs:
       test_targets: "auto"
       base_ref: "origin/main"
       runs_on: '["self-hosted","Linux","X64"]'
+      axci_ref: "feat/ci-test-selection-hardening"
 
 # lock-test trigger 1773529271
 
