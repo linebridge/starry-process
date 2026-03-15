@@ -20,3 +20,4 @@ This script creates a temporary git worktree and checks:
 > CI validation note: this line is added to verify doc-only auto-skip behavior.
 > CI validation note: this line is added to verify doc-only auto-skip behavior.
 
+<!-- multi-org lock test 2026-03-15T09:05:55+08:00 -->
