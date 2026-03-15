@@ -12,7 +12,7 @@ jobs:
     with:
       crate_name: "starry-process"
       test_targets: "auto"
-      base_ref: "origin/main"
+      base_ref: ${{ github.event_name == 'push' && github.event.before || 'origin/main' }}
       runs_on: '["self-hosted","Linux","X64"]'
       axci_ref: "feat/ci-test-selection-hardening"
 
